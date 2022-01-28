@@ -63,12 +63,12 @@ section {
 
 @media screen and (min-width: 1008px) {
   .responsive-gradient {
-    background: linear-gradient(288deg, #5a1300 100%, #000 2%);
+    background: linear-gradient(288deg, #5a1300 15%, #000 80%);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .responsive-gradient {
-    background: linear-gradient(281deg, #5a1300 100%, #000 2%);
+    background: linear-gradient(281deg, #5a1300 15%, #000 80%)
   }
 }
