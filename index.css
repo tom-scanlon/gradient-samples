@@ -6,7 +6,16 @@
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+p {
+  padding: 1rem;
 }
 
 section {
@@ -16,4 +25,50 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.layered-gradient {
+  color: white;
+  background: radial-gradient(circle at 90.00% 8.02%, #cc2c00, transparent 100%),radial-gradient(circle at 52.08% 48.62%, #380000, transparent 100%),radial-gradient(circle at 10.83% 15.29%, #380000, transparent 100%),radial-gradient(circle at 4.03% 89.97%, #800000, transparent 67%),radial-gradient(circle at 92.99% 91.98%, #870000, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);
+}
+
+.responsive-gradient {
+  color: white;
+  background: radial-gradient(circle at 50% 4%, #5a1300, #130301 87%);
+}
+
+@media screen and (min-width: 320px) {
+  .responsive-gradient {
+    background: radial-gradient(circle at 50% 4%, #5a1300, #130301 88%);
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .responsive-gradient {
+    background: radial-gradient(circle at 50% 4%, #5a1300, #130301 84%);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .responsive-gradient {
+    background: radial-gradient(circle at 50% 4%, #5a1300, #130301 82%);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .responsive-gradient {
+    background: radial-gradient(circle at 50% 4%, #5a1300, #130301 81%);
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .responsive-gradient {
+    background: linear-gradient(288deg, #5a1300 100%, #000 2%);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .responsive-gradient {
+    background: linear-gradient(281deg, #5a1300 100%, #000 2%);
+  }
 }
